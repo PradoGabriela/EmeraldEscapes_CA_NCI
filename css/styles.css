@@ -1173,6 +1173,7 @@ button{
 
         #confirmation{
             display: none;
+            min-height: 600px;
         }
     /*contact form end*/
     
