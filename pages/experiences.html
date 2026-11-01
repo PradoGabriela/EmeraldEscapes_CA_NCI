@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta name="color-scheme" content="light">
+    <title>Experiences | Emerald Escapes</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-container ">
+
+        <!--Header Section-->
+        <header>    
+            <!--Mobile Header-->
+            <div id="header-mobile">
+                <div class="logo-container-mobile">
+                    <img src="../images/EmeraldLogo_Horizontal.webp" alt="emerald escapes logo" class="logo-nav">
+                </div>
+                 <button id="nav-btn-mobile" type="button" aria-label="Open nav" aria-controls="side-nav" aria-expanded="false">
+                    <i class="bi bi-three-dots"  aria-hidden="true"></i>
+                </button>
+            </div>
+            <div id="nav-container">
+                 <div class="logo-container">
+                    <img src="../images/EmeraldLogo_Horizontal.webp" alt="emerald escapes logo" class="logo-nav">
+                </div>
+                <div class="nav-bar">
+                    <ul>
+                        <li class="nav-list"><a href="../index.html">Home</a></li>
+                        <li class="nav-list"><a href="experiences.html">Experiences</a></li>
+                        <li class="nav-list"><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                </div>
+                <div class="toggle-container">
+                    <i class="bi bi-moon dark"></i>
+                    <i class="bi bi-sun light"></i>
+                    <label class="switch">
+                    <input type="checkbox" class="theme-switch">
+                    <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+        </header>
+
+
+        <!--Side Menu Section-->
+        <nav id="side-nav" aria-label="nav mobile">
+
+            <ul>
+                <li class="mobile-nav-list"><a href="../index.html">Home</a></li>
+                <li class="mobile-nav-list"><a href="experiences.html">Experiences</a></li>
+                <li class="mobile-nav-list"><a href="contact.html">Contact</a></li>                   
+            </ul>
+                <div class="toggle-container">
+                <i class="bi bi-moon dark"></i>
+                <i class="bi bi-sun light"></i>
+                <label class="switch">
+                <input type="checkbox" class="theme-switch">
+                <span class="slider round"></span>
+                </label>
+            </div>
+        </nav>
+        
+       
+        <!--Main Section-->
+
+       
+        <!-- Filter Section -->
+        <div class="hero-experience-section">
+            
+             <h1 class="hero-title">Find Your Next Adventure</h1>
+            <div class="experience-filter-container">
+                <!-- Location Filter -->
+                <div class="filter-type">
+                    <h2>Location:</h2>
+                    <select id="location-filter">
+                        <option value="all">All Locations</option>
+                        <option value="antrim">County Antrim</option>
+                        <option value="wicklow">County Wicklow</option>
+                        <option value="dublin">Dublin</option>
+                        <option value="sligo">County Sligo</option>
+                        <option value="westmeath">County Westmeath</option>
+                        <option value="meath">County Meath</option>
+                        <option value="clare">County Clare</option>
+                        <option value="kilkenny">County Kilkenny</option>
+                        <option value="galway">County Galway</option>
+                        <option value="mayo">County Mayo</option>
+                    </select>
+                </div>
+
+                
+                <div class="filter-type">
+                    <h2>Type:</h2>
+                    <select id="type-filter">
+                        <option value="all">All Experiences</option>
+                        <option value="family">Family</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="heritage">Heritage</option>
+                        <option value="culture">Culture</option>
+                        <option value="couple">Couples</option>
+                        <option value="romantic">Romantic</option>
+                        <option value="spooky">Spooky</option>
+                        <option value="nature">Nature</option>
+                        <option value="luxury">Luxury</option>
+                        <option value="road-trip">Road Trips</option>
+                        <option value="city-break">City Breaks</option>
+                        <option value="hiking">Hiking</option>
+                        <option value="history">History</option>
+                        <option value="coastal-escape">Coastal Escape</option>
+                        <option value="group-break">Group Break</option>
+                    </select>
+                </div>
+
+         
+                <div class="filter-type">
+                    <h2>Price Range:</h2>
+                    <select id="price-filter">
+                        <option value="all">Any Price</option>
+                        <option value="budget">Under €50</option>
+                        <option value="moderate">€50–€100</option>
+                        <option value="premium">€101–€250</option>
+                        <option value="luxury">Over €250</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Experiences  cards-->
+        <!--Card 1: The Giant's Causeway-->
+        <section class="experiences-section">
+            <h1>Our Experiences:</h1>
+            <div class="experiences-grid">
+                <article class="experiences-main-card"
+                    data-location="antrim"
+                    data-types="adventure family heritage"
+                    data-min-price="89"
+                    data-max-price="149">
+
+                    <div class="experiences-main-image-container">
+                        <img src="../images/Experiences/GiantExperience1.webp" alt="The Giant's Causeway on the Irish coast">
+                        <span class="experience-tag">Adventure</span>
+                    </div>
+
+                    
+                    <div class="experience-content">
+                        <p class="experience-location">
+                            <i class="bi bi-geo-alt-fill"></i> County Antrim, Northern Ireland
+                        </p>
+                        <h2>The Giant's Causeway Quest</h2>
+                        <p class="experience-intro">
+                            Follow in the footsteps of Fionn Mac Cumhaill
+                            and discover the legend behind this extraordinary coastline.
+                        </p>
+                        <div class="experience-meta">
+                            
+                            <span> <i class="bi bi-clock"></i> 4–5 hours</span>
+                            <span>From €89</span>
+                        </div>
+
+
+                        <button class="expand-card-btn" type="button" aria-expanded="false" aria-controls="experience-details-1">
+                            <span class="btn-text">Show More</span>
+                        </button>
+
+                        <div class="experience-details" id="experience-details-1" hidden>
+
+                            <h3>The Story Behind the Experience</h3>
+                            <p>
+                                According to Irish legend, the giant Fionn Mac Cumhaill
+                                built a causeway across the sea to face his Scottish rival,
+                                Benandonner. Today, the Giant's Causeway is famous for its
+                                remarkable hexagonal basalt columns and dramatic coastal views.
+                            </p>
+                            <h3>What's Included?</h3>
+                            <ul>
+                                <li>Guided coastal walk</li>
+                                <li>Irish mythology storytelling</li>
+                                <li>Giant-themed quizzes and challenges</li>
+                                <li>Time to explore the spectacular landscape</li>
+                            </ul>
+                            <div class="experience-extra-info">
+                                <p><strong>Duration:</strong> 4–5 hours</p>
+                                <p><strong>Location:</strong> County Antrim</p>
+                                <p><strong>Suitable for:</strong> Families and adventurers</p>
+                                <p><strong>Availability:</strong> March–October, weather permitting</p>
+                                <p><strong>Price:</strong> €89–€149 per person</p>
+                            </div>
+                            <nav class="btns-nav">
+                                <div class="popup">
+                                    <button type="button" class="story-btn"
+                                        onclick="togglePopup(this)">
+                                        Read the Legend
+                                    </button>
+                                    <div class="popuptext">
+                                        <p>
+                                            Long ago, there lived a brave Irish giant called <strong>Fionn Mac Cumhaill</strong>. One day, he heard that a Scottish giant named Benandonner wanted to fight him!<br><br>
+
+                                            Fionn decided to build a giant stone road across the sea so he could meet his enemy. But when he saw how BIG Benandonner was, he got scared and ran home!<br><br>
+
+                                            Luckily, Fionn’s clever wife, <strong>Oonagh</strong>, had a plan. She dressed Fionn up as a giant baby and tucked him into a cradle. When Benandonner arrived, he saw the huge baby and thought, <em>“If the baby is this big, how enormous must the father be?”</em><br><br>
+
+                                            Terrified, Benandonner ran all the way back to Scotland, breaking the stone road behind him. The stones left behind became the <strong>Giant’s Causeway</strong>, a magical place where the legend of the two giants lives on!
+                                        </p>
+                                        <a href="https://unrealpodcast.com/the-giants-and-the-causeways-podcast-script/" target="_blank" >Refrence</a>
+                                    </div>
+                                </div>
+                            </nav>
+                             <a href="contact.html?experience=the-giants-causeway-quest" class="book-experience-btn"> Explore & Book</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2: The Enchanted Fairy Trail -->
+                <article class="experiences-main-card"
+                    data-location="wicklow"
+                    data-types="family nature adventure"
+                    data-min-price="45"
+                    data-max-price="75">
+
+                    <div class="experiences-main-image-container">
+                        <img src="../images/Experiences/GlendaloughExperience1.webp" alt="A woodland trail in the Wicklow Mountains">
+                        <span class="experience-tag">Nature</span>
+                    </div>
+                    <div class="experience-content">
+                        <p class="experience-location">
+                            <i class="bi bi-geo-alt-fill"></i> Glendalough, County Wicklow
+                        </p>
+                        <h2>The Enchanted Fairy Trail</h2>
+                        <p class="experience-intro">
+                            Explore the peaceful woodlands of Wicklow, learn about the mysterious Aos Sí,
+                            and follow a magical trail filled with riddles and hidden clues.
+                        </p>
+                        <div class="experience-meta">
+                            <span><i class="bi bi-clock"></i> 2–3 hours</span>
+                            <span>From €45</span>
+                        </div>
+
+                        <button class="expand-card-btn" type="button" aria-expanded="false" aria-controls="experience-details-2">
+                            <span class="btn-text">Show More</span>
+                        </button>
+                       
+
+                        
+                        <div class="experience-details" id="experience-details-2" hidden>
+                            <h3>The Story Behind the Experience</h3>
+                            <p>
+                                Irish folklore tells of the Aos Sí, mysterious fairy folk believed
+                                to inhabit ancient mounds, forests and other hidden places.
+                                Discover these enchanting traditions while exploring the beautiful
+                                woodland trails of Glendalough.
+                            </p>
+
+                            <h3>What's Included?</h3>
+                            <ul>
+                                <li>Guided woodland nature trail</li>
+                                <li>Irish fairy folklore storytelling</li>
+                                <li>Riddles and hidden-clue challenges</li>
+                                <li>Magical treasure hunt for children</li>
+                            </ul>
+
+                            <div class="experience-extra-info">
+                                <p><strong>Duration:</strong> 2–3 hours</p>
+                                <p><strong>Location:</strong> Glendalough and the Wicklow Mountains, County Wicklow</p>
+                                <p><strong>Suitable for:</strong> Families and young explorers</p>
+                                <p><strong>Requirements:</strong> Suitable outdoor clothing; children accompanied by adults</p>
+                                <p><strong>Availability:</strong> April–October, selected days</p>
+                                <p><strong>Price:</strong> €45–€75 per person</p>
+                            </div>
+
+                            <nav class="btns-nav">
+                                <div class="popup">
+                                    <button type="button" class="story-btn"
+                                        onclick="togglePopup(this)">
+                                        Read the Legend
+                                    </button>
+                                    <div class="popuptext">
+                                        <p>
+                                            Long ago, the ancient Irish people believed in a magical race called the <strong>Aos Sí</strong> (pronounced “ees shee”). They were powerful, mysterious beings who lived beneath the green hills and inside ancient mounds. Many people called them the fairy folk!<br><br>
+
+                                            According to Irish legend, the Aos Sí were once the <strong>Tuatha Dé Danann</strong>, a magical people who ruled Ireland long ago. When humans arrived and defeated them, they retreated underground, where they built a hidden world of their own.<br><br>
+
+                                            People believed that the fairy folk could be kind, but they could also play tricks or bring bad luck if they were disturbed. That’s why ancient hills, fairy forts, and even lonely trees were treated with great care and respect.<br><br>
+
+                                            So, the next time you see a mysterious green hill in Ireland, take a closer look… Who knows what magical secrets might be hiding beneath it?
+                                        </p>
+                                        <a href="https://www.danielkirkpatrick.co.uk/irish-mythology/aos-si-irish-mythology/" target="_blank">Reference</a>
+                                    </div>
+                                </div>
+                            </nav>
+                            <a href="contact.html?experience=the-enchanted-fairy-trail" class="book-experience-btn">Get a Quote</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Card 3: Dublin's Dark Legends -->
+                <article class="experiences-main-card"
+                    data-location="dublin"
+                    data-types="city-break heritage culture"
+                    data-min-price="25"
+                    data-max-price="45">
+
+                    <div class="experiences-main-image-container">
+                        <img src="../images/Experiences/DublinExperience1.webp" alt="A historic street in Dublin at night">
+                        <span class="experience-tag">Heritage</span>
+                    </div>
+
+                    
+                    <div class="experience-content">
+                        <p class="experience-location">
+                            <i class="bi bi-geo-alt-fill"></i> Dublin City Centre
+                        </p>
+                        <h2>Dublin's Dark Legends</h2>
+                        <p class="experience-intro">
+                            Wander through historic streets and atmospheric lanes while discovering
+                            Dublin's ghost stories, mysterious events and fascinating past.
+                        </p>
+                        <div class="experience-meta">
+                            <span><i class="bi bi-clock"></i> 2–2.5 hours</span>
+                            <span>From €25</span>
+                        </div>
+
+                        <button class="expand-card-btn" type="button" aria-expanded="false" aria-controls="experience-details-3">
+                            <span class="btn-text">Show More</span>
+                        </button>
+
+                        
+                        <div class="experience-details" id="experience-details-3" hidden>
+                            <h3>The Story Behind the Experience</h3>
+                            <p>
+                                Dublin's historic streets hold centuries of stories about unusual
+                                events, mysterious characters and supernatural encounters.
+                                Join a storyteller to discover how Irish folklore intertwines
+                                with the city's history and traditions.
+                            </p>
+
+                            <h3>What's Included?</h3>
+                            <ul>
+                                <li>Guided walking tour of historic Dublin</li>
+                                <li>Stories of ghosts and mysterious happenings</li>
+                                <li>Irish folklore and local history</li>
+                                <li>Visits to atmospheric streets and historic locations</li>
+                            </ul>
+
+                            <div class="experience-extra-info">
+                                <p><strong>Duration:</strong> 2–2.5 hours</p>
+                                <p><strong>Location:</strong> Dublin city centre</p>
+                                <p><strong>Suitable for:</strong> History enthusiasts and mystery lovers</p>
+                                <p><strong>Requirements:</strong> Comfortable walking shoes; recommended age 12+</p>
+                                <p><strong>Availability:</strong> Year-round, selected evenings</p>
+                                <p><strong>Price:</strong> €25–€45 per person</p>
+                            </div>
+
+                            <nav class="btns-nav">
+                                <div class="popup">
+                                    <button type="button" class="story-btn"
+                                        onclick="togglePopup(this)">
+                                        Read the Legend
+                                    </button>
+                                    <div class="popuptext">
+                                        <p>
+                                            Dublin is a city full of history, secrets, and spooky tales! According to local legends, some of its oldest buildings are home to mysterious ghosts that appear when nobody expects them.<br><br>
+
+                                            At the <strong>Black Church</strong>, people have told stories of shadowy figures and strange footsteps in empty rooms. At <strong>Malahide Castle</strong>, a ghostly lady dressed in white is said to leave her painting and wander through the castle at night!<br><br>
+
+                                            And the mysteries don’t end there! At <strong>Marsh’s Library</strong>, legend says that the ghost of its founder, Archbishop Narcissus Marsh, still searches for a missing letter hidden inside a book.<br><br>
+
+                                            Are these stories just imagination, or could Dublin really have a few ghostly visitors? Next time you explore the city, keep your eyes open… You never know what might be lurking around the corner!
+                                        </p>
+                                        <a href="https://www.frg.ie/culture/dublin-ghost-stories/" target="_blank">Reference</a>
+                                    </div>
+                                </div>
+                            </nav>
+                            <a href="contact.html?experience=dublins-dark-legends" class="book-experience-btn">Get a Quote</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Card 4: The Lovers' Legend Escape -->
+                <article class="experiences-main-card"
+                    data-location="sligo"
+                    data-types="couple romantic heritage"
+                    data-min-price="399"
+                    data-max-price="699">
+
+                    <div class="experiences-main-image-container">
+                        <img src="../images/Experiences/GleniffHorseshoe1.webp" alt="landscape of GleniffHorseshoe ">
+                        <span class="experience-tag">Romantic</span>
+                    </div>
+
+                    
+                    <div class="experience-content">
+                        <p class="experience-location">
+                            <i class="bi bi-geo-alt-fill"></i> County Sligo
+                        </p>
+                        <h2>The Lovers' Legend Escape</h2>
+                        <p class="experience-intro">
+                            Follow the tragic tale of Diarmuid and Gráinne through beautiful
+                            Irish landscapes, with peaceful countryside walks and a romantic overnight stay.
+                        </p>
+                        <div class="experience-meta">
+                            <span><i class="bi bi-clock"></i> 2 days / 1 night</span>
+                            <span>From €399</span>
+                        </div>
+
+                        <button class="expand-card-btn" type="button" aria-expanded="false" aria-controls="experience-details-4">
+                            <span class="btn-text">Show More</span>
+                        </button>
+
+                        
+                        <div class="experience-details" id="experience-details-4" hidden>
+                            <h3>The Story Behind the Experience</h3>
+                            <p>
+                                The legend of Diarmuid and Gráinne tells the story of two lovers
+                                who fled across Ireland in search of freedom and a life together.
+                                Discover the landscapes connected with their tale while exploring
+                                the romantic side of Irish mythology.
+                            </p>
+
+                            <h3>What's Included?</h3>
+                            <ul>
+                                <li>Guided exploration of locations associated with the legend</li>
+                                <li>Irish mythology storytelling</li>
+                                <li>Peaceful countryside walks</li>
+                                <li>Romantic dinner</li>
+                                <li>One-night accommodation, subject to availability</li>
+                            </ul>
+
+                            <div class="experience-extra-info">
+                                <p><strong>Duration:</strong> 2 days / 1 night</p>
+                                <p><strong>Location:</strong> County Sligo, including the landscapes around Keash</p>
+                                <p><strong>Suitable for:</strong> Couples</p>
+                                <p><strong>Requirements:</strong> Two adults; advance booking required</p>
+                                <p><strong>Availability:</strong> March–November, selected weekends</p>
+                                <p><strong>Price:</strong> €399–€699 per booking package</p>
+                            </div>
+
+                            <nav class="btns-nav">
+                                <div class="popup">
+                                    <button type="button" class="story-btn"
+                                        onclick="togglePopup(this)">
+                                        Read the Legend
+                                    </button>
+                                    <div class="popuptext">
+                                        <p>
+                                            Long ago, there lived a beautiful princess named <strong>Gráinne</strong>. She was going to marry a famous Irish warrior called <strong>Fionn Mac Cumhaill</strong>. But at the wedding feast, she met a brave young warrior named <strong>Diarmuid</strong> and fell in love with him!<br><br>
+
+                                            Gráinne asked Diarmuid to run away with her, but he didn’t want to upset Fionn, who was his leader and friend. So Gráinne used a magic spell, and the two escaped together!<br><br>
+
+                                            Fionn was furious and chased them across Ireland. The couple travelled through forests and mountains, hiding in caves and under trees to stay safe. For years, they went on many adventures together.<br><br>
+
+                                            One day, near <strong>Benbulben Mountain</strong> in County Sligo, Diarmuid faced a dangerous wild boar. He fought bravely to protect Gráinne, but the boar badly hurt him.<br><br>
+
+                                            Fionn could have saved Diarmuid with his magical water, but he waited too long. Sadly, Diarmuid died before help arrived. And so, the story of Diarmuid and Gráinne became one of Ireland’s most famous love legends.
+                                        </p>
+                                        <a href="https://www.discoveringireland.com/the-legend-of-diarmuid-and-grainne/" target="_blank">Reference</a>
+                                    </div>
+                                </div>
+                            </nav>
+                            <a href="contact.html?experience=the-lovers-legend-escape" class="book-experience-btn">Get a Quote</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Card 5: The Children of Lir Adventure -->
+                <article class="experiences-main-card"
+                    data-location="westmeath"
+                    data-types="family heritage nature"
+                    data-min-price="59"
+                    data-max-price="99">
+
+                    <div class="experiences-main-image-container">
+                        <img src="../images/Experiences/swans1.webp" alt="two white swans">
+                        <span class="experience-tag">Family</span>
+                    </div>
+
+                    
+                    <div class="experience-content">
+                        <p class="experience-location">
+                            <i class="bi bi-geo-alt-fill"></i> Lough Derravaragh, County Westmeath
+                        </p>
+                        <h2>The Children of Lir Adventure</h2>
+                        <p class="experience-intro">
+                            Discover the moving Irish legend of four siblings who were transformed into swans
+                            through interactive storytelling, lakeside walks and creative activities.
+                        </p>
+                        <div class="experience-meta">
+                            <span><i class="bi bi-clock"></i> 3–4 hours</span>
+                            <span>From €59</span>
+                        </div>
+
+                        <button class="expand-card-btn" type="button" aria-expanded="false" aria-controls="experience-details-5">
+                            <span class="btn-text">Show More</span>
+                        </button>
+
+                        
+                        <div class="experience-details" id="experience-details-5" hidden>
+                            <h3>The Story Behind the Experience</h3>
+                            <p>
+                                The Children of Lir is one of Ireland's best-known legends.
+                                It tells of four siblings who were transformed into swans by
+                                their jealous stepmother. Their story explores family, loss,
+                                endurance and hope.
+                            </p>
+
+                            <h3>What's Included?</h3>
+                            <ul>
+                                <li>Interactive storytelling session</li>
+                                <li>Gentle lakeside walk</li>
+                                <li>Nature-spotting activities</li>
+                                <li>Creative workshop inspired by the legend</li>
+                            </ul>
+
+                            <div class="experience-extra-info">
+                                <p><strong>Duration:</strong> 3–4 hours</p>
+                                <p><strong>Location:</strong> Lough Derravaragh, County Westmeath</p>
+                                <p><strong>Suitable for:</strong> Families and children</p>
+                                <p><strong>Requirements:</strong> Children accompanied by adults; comfortable outdoor clothing</p>
+                                <p><strong>Availability:</strong> April–September, selected dates</p>
+                                <p><strong>Price:</strong> €59–€99 per person</p>
+                            </div>
+
+                            <nav class="btns-nav">
+                                <div class="popup">
+                                    <button type="button" class="story-btn"
+                                        onclick="togglePopup(this)">
+                                        Read the Legend
+                                    </button>
+                                    <div class="popuptext">
+                                        <p>
+                                            Long ago, there lived an Irish lord named <strong>Lir</strong>, who loved his four children very much. Their names were <strong>Fionnuala, Aodh, Fiachra, and Conn</strong>. But after their mother died, Lir married another woman named <strong>Aoife</strong>, who became jealous of how much he loved his children.<br><br>
+
+                                            One day, Aoife used her magic to turn the four children into beautiful white swans! She placed a spell on them that would last for <strong>900 years</strong>. They would spend 300 years on a lake, 300 years on the cold sea, and 300 years near the coast of County Mayo.<br><br>
+
+                                            Even though they looked like swans, the children could still speak and sing with beautiful voices. They missed their father and their home, but they stayed together and helped each other through the long years.<br><br>
+
+                                            At last, after 900 years, they heard the sound of a church bell. The spell was broken, and they changed back into humans. But they had grown very old. Before they passed away, a kind monk listened to their story and helped them find peace.<br><br>
+
+                                            And so, the story of the <strong>Children of Lir</strong> became one of Ireland’s most famous legends, reminding us of the love between family and the strength of staying together through difficult times.
+                                        </p>
+                                        <a href="https://www.wildernessireland.com/blog/irish-myths-legends-children-of-lir/" target="_blank">Reference</a>
+                                    </div>
+                                </div>
+                            </nav>
+                            <a href="contact.html?experience=the-children-of-lir-adventure" class="book-experience-btn">Get a Quote</a>
+                        </div>
+                    </div>
+                </article>
+               
+                <!-- Card 6: Queen Maeve's Warrior Trail -->
+                <article class="experiences-main-card"
+                    data-location="sligo"
+                    data-types="adventure hiking heritage"
+                    data-min-price="79"
+                    data-max-price="129">
+
+                    <div class="experiences-main-image-container">
+                        <img src="../images/Experiences/QueenMaeveTrail1.webp" alt="The landscape of Knocknarea">
+                        <span class="experience-tag">Adventure</span>
+                    </div>
+
+                    <div class="experience-content">
+                        <p class="experience-location">
+                            <i class="bi bi-geo-alt-fill"></i> Knocknarea Mountain, County Sligo
+                        </p>
+                        <h2>Queen Maeve's Warrior Trail</h2>
+                        <p class="experience-intro">
+                            Follow the story of Queen Maeve on a challenging hike through Sligo's
+                            dramatic landscape, while discovering ancient legends and enjoying countryside views.
+                        </p>
+                        <div class="experience-meta">
+                            <span><i class="bi bi-clock"></i> 4–5 hours</span>
+                            <span>From €79</span>
+                        </div>
+
+                        <button class="expand-card-btn" type="button" aria-expanded="false" aria-controls="experience-details-6">
+                            <span class="btn-text">Show More</span>
+                        </button>
+
+                        <div class="experience-details" id="experience-details-6" hidden>
+                            <h3>The Story Behind the Experience</h3>
+                            <p>
+                                Queen Maeve, the legendary warrior queen of Connacht, features
+                                prominently in Ireland's ancient stories. Explore Knocknarea,
+                                where a large prehistoric cairn is traditionally associated with her,
+                                and hear tales of ancient rivalries and heroic adventures.
+                            </p>
+
+                            <h3>What's Included?</h3>
+                            <ul>
+                                <li>Guided hike on Knocknarea Mountain</li>
+                                <li>Irish mythology storytelling</li>
+                                <li>Stories of Queen Maeve and ancient rivalries</li>
+                                <li>Scenic countryside and coastal views</li>
+                            </ul>
+
+                            <div class="experience-extra-info">
+                                <p><strong>Duration:</strong> 4–5 hours</p>
+                                <p><strong>Location:</strong> Knocknarea Mountain, County Sligo</p>
+                                <p><strong>Suitable for:</strong> Hikers and outdoor adventurers</p>
+                                <p><strong>Requirements:</strong> Hiking boots, moderate fitness and weatherproof clothing</p>
+                                <p><strong>Availability:</strong> April–October, weather permitting</p>
+                                <p><strong>Price:</strong> €79–€129 per person</p>
+                            </div>
+
+                            <nav class="btns-nav">
+                                <div class="popup">
+                                    <button type="button" class="story-btn"
+                                        onclick="togglePopup(this)">
+                                        Read the Legend
+                                    </button>
+                                    <div class="popuptext">
+                                        <p>
+                                            Long ago, there lived a powerful Irish queen named <strong>Maeve</strong>. She ruled the kingdom of Connacht in the west of Ireland. Maeve was brave, clever, and a great leader who wanted to be as powerful as anyone else!<br><br>
+
+                                            One day, Maeve and her husband, <strong>Aillil</strong>, began arguing about who was the richest. They had many wonderful things, but Aillil owned a very special bull. Maeve wanted a bull just as amazing, so she decided to find the famous <strong>Brown Bull of Cooley</strong>!<br><br>
+
+                                            Maeve gathered a huge army and marched into Ulster to get the bull. But a brave young warrior named <strong>Cú Chulainn</strong> stood in her way. He fought to protect his land, and Maeve’s army struggled to get past him.<br><br>
+
+                                            In the end, Maeve managed to get the Brown Bull, but her story did not end there. She was known for her courage, her strong will, and her desire to win. Even today, a great stone mound on <strong>Knocknarea Mountain</strong> in County Sligo is said to be her resting place.<br><br>
+
+                                            Was Queen Maeve a real queen or a figure from legend? Nobody knows for sure. But her story remains one of the most famous tales in Irish mythology!
+                                        </p>
+                                        <a href="https://www.wildernessireland.com/blog/irish-folklore-queen-maeve/" target="_blank">Reference</a>
+                                    </div>
+                                </div>
+                            </nav>
+                            <a href="contact.html?experience=queen-maeves-warrior-trail" class="book-experience-btn">Get a Quote</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Card 7: The Banshee's Midnight Mystery -->
+                <article class="experiences-main-card"
+                    data-location="dublin"
+                    data-types="spooky city-break culture"
+                    data-min-price="29"
+                    data-max-price="49">
+
+                    <div class="experiences-main-image-container">
+                        <img src="../images/Experiences/BansheeMystery1.webp" alt="buildings and people in dublin">
+                        <span class="experience-tag">Spooky</span>
+                    </div>
+
+                    <div class="experience-content">
+                        <p class="experience-location">
+                            <i class="bi bi-geo-alt-fill"></i> Dublin City Centre
+                        </p>
+                        <h2>The Banshee's Midnight Mystery</h2>
+                        <p class="experience-intro">
+                            Explore Ireland's darker folklore on an atmospheric evening walk
+                            filled with chilling tales of banshees, spirits and supernatural encounters.
+                        </p>
+                        <div class="experience-meta">
+                            <span><i class="bi bi-clock"></i> Approximately 2 hours</span>
+                            <span>From €29</span>
+                        </div>
+
+                        <button class="expand-card-btn" type="button" aria-expanded="false" aria-controls="experience-details-7">
+                            <span class="btn-text">Show More</span>
+                        </button>
+
+                        <div class="experience-details" id="experience-details-7" hidden>
+                            <h3>The Story Behind the Experience</h3>
+                            <p>
+                                In Irish tradition, the banshee is a supernatural figure whose
+                                eerie cry is associated with death and the spirit world.
+                                Discover the origins of this chilling folklore and hear other
+                                mysterious stories on a guided evening walk through Dublin.
+                            </p>
+
+                            <h3>What's Included?</h3>
+                            <ul>
+                                <li>Guided evening walking tour</li>
+                                <li>Traditional banshee stories</li>
+                                <li>Tales of spirits and supernatural encounters</li>
+                                <li>Historical details about Irish folklore</li>
+                            </ul>
+
+                            <div class="experience-extra-info">
+                                <p><strong>Duration:</strong> Approximately 2 hours</p>
+                                <p><strong>Location:</strong> Dublin city centre</p>
+                                <p><strong>Suitable for:</strong> Fans of ghost stories and spooky experiences</p>
+                                <p><strong>Requirements:</strong> Recommended age 16+; comfortable walking shoes</p>
+                                <p><strong>Availability:</strong> Year-round, selected evenings</p>
+                                <p><strong>Price:</strong> €29–€49 per person</p>
+                            </div>
+
+                            <nav class="btns-nav">
+                                <div class="popup">
+                                    <button type="button" class="story-btn"
+                                        onclick="togglePopup(this)">
+                                        Read the Legend
+                                    </button>
+                                    <div class="popuptext">
+                                        <p>
+                                            Long ago, people in Ireland told stories about a mysterious fairy called the <strong>Banshee</strong>. She was said to appear at night, dressed in white or grey, with long hair and a sad look on her face.<br><br>
+
+                                            The Banshee was famous for her strange, sorrowful cry. According to legend, when people heard her crying or singing in the darkness, it was a warning that someone in their family might soon die.<br><br>
+
+                                            Some people believed that the Banshee watched over certain Irish families and had been doing so for hundreds of years. Others imagined her as the spirit of someone who had once loved that family very much.<br><br>
+
+                                            Nobody knows what a Banshee really looked like, and her appearance changed from story to story. Some said she looked like a young woman, while others described her as a little old lady wandering beneath the moonlight.<br><br>
+
+                                            So, if you ever hear a strange cry on a quiet Irish night, listen carefully! Could it be the wind… or could the mysterious Banshee be nearby?
+                                        </p>
+                                        <a href="https://irishmyths.com/2022/07/25/banshee/" target="_blank">Reference</a>
+                                    </div>
+                                </div>
+                            </nav>
+                            <a href="contact.html?experience=the-banshees-midnight-mystery" class="book-experience-btn">Get a Quote</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Card 8: Secrets of the Ancient Celts -->
+                <article class="experiences-main-card"
+                    data-location="meath"
+                    data-types="heritage culture history"
+                    data-min-price="99"
+                    data-max-price="179">
+
+                    <div class="experiences-main-image-container">
+                        <img src="../images/Experiences/AncientCelts1.webp" alt="landscape of the Hill of Tara">
+                        <span class="experience-tag">Heritage</span>
+                    </div>
+
+                    <div class="experience-content">
+                        <p class="experience-location">
+                            <i class="bi bi-geo-alt-fill"></i> Hill of Tara, County Meath
+                        </p>
+                        <h2>Secrets of the Ancient Celts</h2>
+                        <p class="experience-intro">
+                            Step into Ireland's ancient past at the Hill of Tara and discover
+                            the beliefs, legendary rulers and sacred places that have shaped Irish culture.
+                        </p>
+                        <div class="experience-meta">
+                            <span><i class="bi bi-clock"></i> 5–6 hours</span>
+                            <span>From €99</span>
+                        </div>
+
+                        <button class="expand-card-btn" type="button" aria-expanded="false" aria-controls="experience-details-8">
+                            <span class="btn-text">Show More</span>
+                        </button>
+
+                        <div class="experience-details" id="experience-details-8" hidden>
+                            <h3>The Story Behind the Experience</h3>
+                            <p>
+                                The Hill of Tara is a historic landscape associated with Ireland's
+                                High Kings. Explore its rich heritage, learn about ancient beliefs
+                                and discover how folklore and legendary rulers influenced Irish traditions.
+                            </p>
+
+                            <h3>What's Included?</h3>
+                            <ul>
+                                <li>Guided exploration of the Hill of Tara</li>
+                                <li>Stories of Ireland's legendary High Kings</li>
+                                <li>Introduction to ancient Irish beliefs and traditions</li>
+                                <li>Exploration of the surrounding Boyne Valley landscape</li>
+                            </ul>
+
+                            <div class="experience-extra-info">
+                                <p><strong>Duration:</strong> 5–6 hours</p>
+                                <p><strong>Location:</strong> Hill of Tara and the Boyne Valley, County Meath</p>
+                                <p><strong>Suitable for:</strong> History, culture and heritage enthusiasts</p>
+                                <p><strong>Requirements:</strong> Comfortable walking shoes and suitable outdoor clothing</p>
+                                <p><strong>Availability:</strong> April–October, guided departures</p>
+                                <p><strong>Price:</strong> €99–€179 per person</p>
+                            </div>
+
+                            <nav class="btns-nav">
+                                <div class="popup">
+                                    <button type="button" class="story-btn"
+                                        onclick="togglePopup(this)">
+                                        Read the Legend
+                                    </button>
+                                    <div class="popuptext">
+                                        <p>
+                                            Long ago, the <strong>Hill of Tara</strong> in County Meath was said to be the home of Ireland’s High Kings. It was a special place where kings held feasts, made important decisions, and ruled their kingdom.<br><br>
+
+                                            One of the most magical things at Tara was a stone called the <strong>Lia Fáil</strong>, or Stone of Destiny. According to legend, when the rightful king touched the stone, it let out a loud cry to show that he was the true king!<br><br>
+
+                                            Tara was also a place of magic and mystery. In one old story, King Echu met a strange visitor named Midre, who challenged him to a game. As they played, the king made bigger and bigger bets until he risked a kiss and an embrace with his own wife, Étaín!<br><br>
+
+                                            Many Irish legends tell stories of brave heroes, powerful kings, and magical beings connected to Tara. Even today, its green hills and ancient stones remind us of a time when stories and magic were part of everyday life.<br><br>
+
+                                            So, if you ever visit the Hill of Tara, look around carefully. Who knows what secrets these ancient hills might still hold?
+                                        </p>
+                                        <a href="https://www.danielkirkpatrick.co.uk/historical-sites/hill-of-tara-history-mythology/" target="_blank">Reference</a>
+                                    </div>
+                                </div>
+                            </nav>
+                            <a href="contact.html?experience=secrets-of-the-ancient-celts" class="book-experience-btn">Get a Quote</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Card 9: Selkie Secrets of the Wild Atlantic -->
+                <article class="experiences-main-card"
+                    data-location="clare"
+                    data-types="nature adventure coastal-escape"
+                    data-min-price="89"
+                    data-max-price="159">
+
+                    <div class="experiences-main-image-container">
+                        <img src="../images/Experiences/SelkieSecrets1.webp" alt="street in County Clare">
+                        <span class="experience-tag">Coastal Escape</span>
+                    </div>
+
+                    <div class="experience-content">
+                        <p class="experience-location">
+                            <i class="bi bi-geo-alt-fill"></i> Doolin, County Clare
+                        </p>
+                        <h2>Selkie Secrets of the Wild Atlantic</h2>
+                        <p class="experience-intro">
+                            Explore Ireland's wild Atlantic coastline while hearing enchanting
+                            stories about selkies, mysterious sea beings and the magic of the ocean.
+                        </p>
+                        <div class="experience-meta">
+                            <span><i class="bi bi-clock"></i> 4–5 hours</span>
+                            <span>From €89</span>
+                        </div>
+
+                        <button class="expand-card-btn" type="button" aria-expanded="false" aria-controls="experience-details-9">
+                            <span class="btn-text">Show More</span>
+                        </button>
+
+                        <div class="experience-details" id="experience-details-9" hidden>
+                            <h3>The Story Behind the Experience</h3>
+                            <p>
+                                According to Irish and Scottish folklore, selkies are mysterious
+                                beings who can shed their seal skins and take human form.
+                                Hear traditional tales of love and the sea while exploring the
+                                spectacular coastal landscapes around Doolin.
+                            </p>
+
+                            <h3>What's Included?</h3>
+                            <ul>
+                                <li>Guided coastal walk</li>
+                                <li>Traditional selkie storytelling</li>
+                                <li>Scenic Atlantic coastline viewpoints</li>
+                                <li>Opportunities to observe coastal wildlife and seabirds</li>
+                            </ul>
+
+                            <div class="experience-extra-info">
+                                <p><strong>Duration:</strong> 4–5 hours</p>
+                                <p><strong>Location:</strong> Doolin and the surrounding coast, County Clare</p>
+                                <p><strong>Suitable for:</strong> Nature lovers and folklore enthusiasts</p>
+                                <p><strong>Requirements:</strong> Weatherproof clothing, comfortable walking shoes and suitable fitness for coastal walking</p>
+                                <p><strong>Availability:</strong> May–September, weather permitting</p>
+                                <p><strong>Price:</strong> €89–€159 per person</p>
+                            </div>
+
+                            <nav class="btns-nav">
+                                <div class="popup">
+                                    <button type="button" class="story-btn"
+                                        onclick="togglePopup(this)">
+                                        Read the Legend
+                                    </button>
+                                    <div class="popuptext">
+                                        <p>
+                                            Long ago, people living by the Irish coast told stories about magical creatures called <strong>Selkies</strong>. They looked like seals when they swam in the sea, but they could take off their seal skins and become humans when they came onto land!<br><br>
+
+                                            One famous story tells of a selkie woman named <strong>Eve</strong>. One day, a man named Thady Rua O’Dowd saw her on the beach and hid her magical seal skin. Without it, Eve could not return to the sea, so she stayed on land and married him. Together, they had seven children.<br><br>
+
+                                            Even though Eve loved her family, she always missed the ocean. One day, one of her children showed her where Thady had hidden her seal skin. Eve found it and knew she could finally return to the sea!<br><br>
+
+                                            She put on her magical skin and rushed back to the waves. She took some of her children with her, while the others were said to have turned into stones along the shore.<br><br>
+
+                                            And so, the legend of the <strong>Selkies</strong> reminds us of the magic of the sea and the powerful pull of home. If you spot a seal swimming near the Irish coast, perhaps you’ll remember this mysterious tale!
+                                        </p>
+                                        <a href="https://www.wildernessireland.com/blog/irish-myths-legends-selkies/" target="_blank">Reference</a>
+                                    </div>
+                                </div>
+                            </nav>
+                            <a href="contact.html?experience=selkie-secrets-of-the-wild-atlantic" class="book-experience-btn">Get a Quote</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Card 10: The Leprechaun's Lost Treasure -->
+                <article class="experiences-main-card"
+                    data-location="kilkenny"
+                    data-types="family adventure city-break"
+                    data-min-price="35"
+                    data-max-price="59">
+
+                    <div class="experiences-main-image-container">
+                        <img src="../images/Experiences/LeprechaunTreasure1.webp" alt="castle view in Kilkenny">
+                        <span class="experience-tag">Family</span>
+                    </div>
+
+                    <div class="experience-content">
+                        <p class="experience-location">
+                            <i class="bi bi-geo-alt-fill"></i> Kilkenny City Centre
+                        </p>
+                        <h2>The Leprechaun's Lost Treasure</h2>
+                        <p class="experience-intro">
+                            Become a folklore detective as you follow a treasure map through
+                            medieval Kilkenny, solve riddles, and search for a legendary pot of gold.
+                        </p>
+                        <div class="experience-meta">
+                            <span><i class="bi bi-clock"></i> 2–3 hours</span>
+                            <span>From €35</span>
+                        </div>
+
+                        <button class="expand-card-btn" type="button" aria-expanded="false" aria-controls="experience-details-10">
+                            <span class="btn-text">Show More</span>
+                        </button>
+
+                        <div class="experience-details" id="experience-details-10" hidden>
+                            <h3>The Story Behind the Experience</h3>
+                            <p>
+                                Leprechauns are among the best-known characters in Irish folklore,
+                                often portrayed as clever and mischievous beings who guard hidden
+                                treasure. Follow clues around Kilkenny and discover local sights
+                                while testing your puzzle-solving skills.
+                            </p>
+
+                            <h3>What's Included?</h3>
+                            <ul>
+                                <li>Treasure map and clue trail</li>
+                                <li>Riddles and folklore-inspired challenges</li>
+                                <li>Exploration of Kilkenny's medieval streets</li>
+                                <li>Family-friendly sightseeing adventure</li>
+                            </ul>
+
+                            <div class="experience-extra-info">
+                                <p><strong>Duration:</strong> 2–3 hours</p>
+                                <p><strong>Location:</strong> Kilkenny city centre, County Kilkenny</p>
+                                <p><strong>Suitable for:</strong> Families and young explorers</p>
+                                <p><strong>Requirements:</strong> Children accompanied by adults; smartphone optional</p>
+                                <p><strong>Availability:</strong> April–October, daily or by arrangement</p>
+                                <p><strong>Price:</strong> €35–€59 per person</p>
+                            </div>
+
+                            <nav class="btns-nav">
+                                <div class="popup">
+                                    <button type="button" class="story-btn"
+                                        onclick="togglePopup(this)">
+                                        Read the Legend
+                                    </button>
+                                    <div class="popuptext">
+                                        <p>
+                                            Long ago, Irish people told stories about little magical beings called <strong>leprechauns</strong>. They were tiny fairies who liked to live alone in quiet places, away from busy towns and villages.<br><br>
+
+                                            Leprechauns were famous for making shoes and playing tricks on people. They were also said to be very rich and to hide pots of gold in secret places. Some stories say that if you caught a leprechaun, he might tell you where his treasure was hidden!<br><br>
+
+                                            But be careful! Leprechauns were clever and tricky. If you looked away for even a moment, they could disappear before you had a chance to find their gold.<br><br>
+
+                                            Today, many people imagine leprechauns wearing green clothes and guarding pots of gold at the end of rainbows. But in older Irish stories, they were sometimes described wearing red coats instead!<br><br>
+
+                                            So, if you ever spot a tiny figure hiding near a tree or an old stone wall, take a closer look! It might just be a leprechaun playing one of his clever tricks.
+                                            </p>
+                                        <a href="https://irishmyths.com/2024/02/28/leprechaun-definition/" target="_blank">Reference</a>
+                                    </div>
+                                </div>
+                            </nav>
+                            <a href="contact.html?experience=the-leprechauns-lost-treasure" class="book-experience-btn">Get a Quote</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Card 11: A Night of Castle Legends -->
+                <article class="experiences-main-card"
+                    data-location="clare"
+                    data-types="luxury couple heritage"
+                    data-min-price="299"
+                    data-max-price="599">
+
+                    <div class="experiences-main-image-container">
+                        <img src="../images/Experiences/CastleLegends1.webp" alt="an hsitoric irish castle">
+                        <span class="experience-tag">Luxury</span>
+                    </div>
+
+                    <div class="experience-content">
+                        <p class="experience-location">
+                            <i class="bi bi-geo-alt-fill"></i> County Clare or County Galway
+                        </p>
+                        <h2>A Night of Castle Legends</h2>
+                        <p class="experience-intro">
+                            Stay in a historic Irish castle, explore its grounds, and discover
+                            centuries of history, ghost stories, and local legends.
+                        </p>
+                        <div class="experience-meta">
+                            <span><i class="bi bi-clock"></i> 2 days / 1 night</span>
+                            <span>From €299</span>
+                        </div>
+
+                        <button class="expand-card-btn" type="button" aria-expanded="false" aria-controls="experience-details-11">
+                            <span class="btn-text">Show More</span>
+                        </button>
+
+                        <div class="experience-details" id="experience-details-11" hidden>
+                            <h3>The Story Behind the Experience</h3>
+                            <p>
+                                Ireland's historic castles hold stories of former residents,
+                                secret passages, local traditions and unexplained happenings.
+                                Discover the atmosphere and history of a participating castle
+                                through guided exploration and an evening of folklore storytelling.
+                            </p>
+
+                            <h3>What's Included?</h3>
+                            <ul>
+                                <li>One-night stay at a participating historic castle hotel</li>
+                                <li>Exploration of castle grounds</li>
+                                <li>Local history and folklore storytelling</li>
+                                <li>Special dinner</li>
+                                <li>Evening storytelling session</li>
+                            </ul>
+
+                            <div class="experience-extra-info">
+                                <p><strong>Duration:</strong> 2 days / 1 night</p>
+                                <p><strong>Location:</strong> A participating castle hotel in County Clare or County Galway</p>
+                                <p><strong>Suitable for:</strong> Couples and travellers seeking a luxury escape</p>
+                                <p><strong>Requirements:</strong> Advance booking; accommodation subject to availability</p>
+                                <p><strong>Availability:</strong> Year-round, subject to availability</p>
+                                <p><strong>Price:</strong> €299–€599 per booking package</p>
+                            </div>
+
+                             <nav class="btns-nav">
+                                <div class="popup">
+                                    <button type="button" class="story-btn"
+                                        onclick="togglePopup(this)">
+                                        Read the Legend
+                                    </button>
+                                    <div class="popuptext">
+                                        <p>
+                                            Long ago, beside the River Shannon in County Clare, there was a place where Vikings came to trade. Around the year 970, a Viking trading camp stood where <strong>Bunratty Castle</strong> is today!<br><br>
+
+                                            Over the years, several castles were built on this very spot. The castle we see today was built by the <strong>MacNamara family</strong> around 1425. Later, it became the home of the powerful <strong>O’Brien family</strong>, who ruled the area as the Earls of Thomond.<br><br>
+
+                                            Inside the castle, people ate grand meals, celebrated special occasions, and lived behind strong stone walls. But life was not always peaceful! The castle saw battles and changes of power as different groups fought to control the land.<br><br>
+
+                                            After many years, the castle was left empty and began to fall into ruin. Luckily, in the 1950s, a man named <strong>Lord Gort</strong> helped save it. He worked with others to repair the castle and bring it back to life.<br><br>
+
+                                            Today, Bunratty Castle stands proudly for visitors to explore. You can discover its old rooms, imagine life in medieval times, and visit the nearby Folk Park to see how people lived long ago.<br><br>
+
+                                            So, when you walk through Bunratty Castle, imagine the knights, lords, and families who once called it home. What stories do you think these ancient stone walls could tell?
+                                        </p>
+                                        <a href="https://www.bunrattycastle.ie/bunratty-castle/bunrattycastlehistory/" target="_blank">Reference</a>
+                                    </div>
+                                </div>
+                            </nav>
+                            <a href="contact.html?experience=a-night-of-castle-legends" class="book-experience-btn">Get a Quote</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Card 12: Journey to Tír na nÓg -->
+                <article class="experiences-main-card"
+                    data-location="galway"
+                    data-types="couple road-trip luxury"
+                    data-min-price="499"
+                    data-max-price="899">
+
+                    <div class="experiences-main-image-container">
+                        <img src="../images/Experiences/TirNaNog1.webp" alt="A scenic view of Connemara in County Galway">
+                        <span class="experience-tag">Road Trip</span>
+                    </div>
+
+                    <div class="experience-content">
+                        <p class="experience-location">
+                            <i class="bi bi-geo-alt-fill"></i> Galway and Connemara
+                        </p>
+                        <h2>Journey to Tír na nÓg</h2>
+                        <p class="experience-intro">
+                            Explore the landscapes inspired by the mythical Land of Eternal Youth on a
+                            scenic western escape filled with rugged mountains, quiet beaches, and romance.
+                        </p>
+                        <div class="experience-meta">
+                            <span><i class="bi bi-clock"></i> 3 days / 2 nights</span>
+                            <span>From €499</span>
+                        </div>
+
+                        <button class="expand-card-btn" type="button" aria-expanded="false" aria-controls="experience-details-12">
+                            <span class="btn-text">Show More</span>
+                        </button>
+
+                        <div class="experience-details" id="experience-details-12" hidden>
+                            <h3>The Story Behind the Experience</h3>
+                            <p>
+                                Tír na nÓg is the mythical Land of Eternal Youth in Irish tradition.
+                                The story of Oisín and Niamh tells of a journey to a magical world
+                                beyond the sea. Explore the landscapes of Connemara while discovering
+                                this timeless tale of love, adventure and enchantment.
+                            </p>
+
+                            <h3>What's Included?</h3>
+                            <ul>
+                                <li>Scenic exploration of Galway and Connemara</li>
+                                <li>Stops at selected beaches, villages and viewpoints</li>
+                                <li>Irish mythology storytelling</li>
+                                <li>Romantic accommodation for two nights</li>
+                                <li>An evening dedicated to Irish storytelling</li>
+                            </ul>
+
+                            <div class="experience-extra-info">
+                                <p><strong>Duration:</strong> 3 days / 2 nights</p>
+                                <p><strong>Location:</strong> Galway and the Connemara region, County Galway</p>
+                                <p><strong>Suitable for:</strong> Couples and travellers seeking a scenic getaway</p>
+                                <p><strong>Requirements:</strong> Two adults; transport arrangements and accommodation booked in advance</p>
+                                <p><strong>Availability:</strong> April–October, advance booking required</p>
+                                <p><strong>Price:</strong> €499–€899 per booking package</p>
+                            </div>
+
+                            <nav class="btns-nav">
+                                <div class="popup">
+                                    <button type="button" class="story-btn"
+                                        onclick="togglePopup(this)">
+                                        Read the Legend
+                                    </button>
+                                    <div class="popuptext">
+                                       <p>
+                                            Long ago, there lived a brave Irish warrior named <strong>Oisín</strong>. He was the son of the famous hero Fionn Mac Cumhaill. One day, a beautiful young woman named <strong>Niamh</strong> arrived on a magical white horse. She came from a wonderful place called <strong>Tír na nÓg</strong>, the Land of Eternal Youth, where nobody ever grew old!<br><br>
+
+                                            Niamh invited Oisín to come with her, and he agreed. They rode across the sea on her magical white horse and arrived in a beautiful land full of happiness, where time seemed to stand still. Oisín and Niamh spent many happy years together.<br><br>
+
+                                            But Oisín began to miss his father and his friends in Ireland. He asked Niamh if he could go home for a visit. She agreed, but gave him one important warning: he must never let his feet touch the ground!<br><br>
+
+                                            When Oisín returned to Ireland, he was amazed to discover that everything had changed. He thought he had been away for only a few years, but <strong>300 years had passed</strong>! His father and friends were long gone.<br><br>
+
+                                            One day, Oisín leaned down from his horse to help some men lift a heavy stone. Suddenly, he fell off and touched the ground. In that moment, the magic disappeared, and he became a very old man.<br><br>
+
+                                            And so, the legend of <strong>Tír na nÓg</strong> reminds us how much we can miss the people and places we love. Even in a magical land, Oisín's heart still belonged to Ireland.
+                                        </p>
+                                        <a href="https://www.irishcentral.com/roots/history/tir-na-nog-legend-eternal-youth" target="_blank">Reference</a>
+                                    </div>
+                                </div>
+                            </nav>
+                            <a href="contact.html?experience=the-haunted-west-road-trip" class="book-experience-btn">Get a Quote</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Card 13: The Pirate Queen's Coastal Adventure -->
+                <article class="experiences-main-card"
+                    data-location="mayo"
+                    data-types="adventure history heritage"
+                    data-min-price="129"
+                    data-max-price="229">
+
+                    <div class="experiences-main-image-container">
+                        <img src="../images/Experiences/PirateQueen1.webp" alt="coastline and waters of Clew Bay">
+                        <span class="experience-tag">Adventure</span>
+                    </div>
+
+                    <div class="experience-content">
+                        <p class="experience-location">
+                            <i class="bi bi-geo-alt-fill"></i> Westport and Clew Bay, County Mayo
+                        </p>
+                        <h2>The Pirate Queen's Coastal Adventure</h2>
+                        <p class="experience-intro">
+                            Discover the remarkable story of Gráinne Mhaol, Ireland's famous
+                            maritime leader, on an adventure along the spectacular west coast of Mayo.
+                        </p>
+                        <div class="experience-meta">
+                            <span><i class="bi bi-clock"></i> 5–6 hours</span>
+                            <span>From €129</span>
+                        </div>
+
+                        <button class="expand-card-btn" type="button" aria-expanded="false" aria-controls="experience-details-13">
+                            <span class="btn-text">Show More</span>
+                        </button>
+
+                        <div class="experience-details" id="experience-details-13" hidden>
+                            <h3>The Story Behind the Experience</h3>
+                            <p>
+                                Gráinne Mhaol, also known as Grace O'Malley, was a famous sixteenth-century
+                                Irish maritime leader. Explore coastal locations associated with her
+                                life and learn about her reputation as a remarkable figure in Irish history.
+                            </p>
+
+                            <h3>What's Included?</h3>
+                            <ul>
+                                <li>Guided exploration of selected coastal locations</li>
+                                <li>Stories about Grace O'Malley and Irish maritime history</li>
+                                <li>Scenic views around Clew Bay</li>
+                                <li>Possible boat trip or historic-site visit, depending on the itinerary</li>
+                            </ul>
+
+                            <div class="experience-extra-info">
+                                <p><strong>Duration:</strong> 5–6 hours</p>
+                                <p><strong>Location:</strong> Westport, Clew Bay and the coast of County Mayo</p>
+                                <p><strong>Suitable for:</strong> History lovers and outdoor adventurers</p>
+                                <p><strong>Requirements:</strong> Weatherproof clothing; boat trips depend on conditions and availability</p>
+                                <p><strong>Availability:</strong> May–September, weather permitting</p>
+                                <p><strong>Price:</strong> €129–€229 per person</p>
+                            </div>
+
+                            <nav class="btns-nav">
+                                <div class="popup">
+                                    <button type="button" class="story-btn"
+                                        onclick="togglePopup(this)">
+                                        Read the Legend
+                                    </button>
+                                    <div class="popuptext">
+                                       <p>
+                                            Long ago, in the west of Ireland, there lived a brave woman named <strong>Gráinne Mhaol</strong>, also known as Grace O’Malley. She was born into a family of sailors and grew up loving the sea. She became a skilled sailor and a powerful leader with her own fleet of ships!<br><br>
+
+                                            Gráinne was not afraid to stand up for herself. One famous story says that when she was a girl, she wanted to sail with her father. He told her that her long hair might get caught in the ship’s ropes, so she cut it short! This is how she got the nickname <strong>Gráinne Mhaol</strong>.<br><br>
+
+                                            As she grew older, Gráinne sailed along Ireland’s western coast with her crew. She traded goods, collected payments from passing ships, and sometimes raided other vessels. Soon, people began calling her the <strong>Pirate Queen of Connacht</strong>!<br><br>
+
+                                            Gráinne was also a fearless leader who defended her family and her lands. She even travelled to England to meet <strong>Queen Elizabeth I</strong> and ask for help protecting her family. It was an extraordinary meeting between two powerful women!<br><br>
+
+                                            Gráinne’s life was full of adventure, danger, and daring journeys across the sea. Today, she is remembered as one of Ireland’s most famous female leaders, a woman who was determined to make her own choices and never give up easily.
+                                        </p>
+                                        <a href="https://historyireland.com/grainne-mhaol-pirate-queen-of-connacht-behind-the-legend/" target="_blank">Reference</a>
+                                    </div>
+                                </div>
+                            </nav>
+                            <a href="contact.html?experience=celtic-legends-weekend" class="book-experience-btn">Get a Quote</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Card 14: The Haunted West Road Trip -->
+                <article class="experiences-main-card"
+                    data-location="galway"
+                    data-types="road-trip spooky heritage"
+                    data-min-price="249"
+                    data-max-price="499">
+
+                    <div class="experiences-main-image-container">
+                        <img src="../images/Experiences/HauntedWestRoadTrip1.webp" alt="country road in the west of Ireland">
+                        <span class="experience-tag">Road Trip</span>
+                    </div>
+
+                    <div class="experience-content">
+                        <p class="experience-location">
+                            <i class="bi bi-geo-alt-fill"></i> Galway and County Mayo
+                        </p>
+                        <h2>The Haunted West Road Trip</h2>
+                        <p class="experience-intro">
+                            Travel through atmospheric villages, historic ruins, and mysterious
+                            landscapes on a self-drive adventure filled with supernatural stories.
+                        </p>
+                        <div class="experience-meta">
+                            <span><i class="bi bi-clock"></i> 3 days / 2 nights</span>
+                            <span>From €249</span>
+                        </div>
+
+                        <button class="expand-card-btn" type="button" aria-expanded="false" aria-controls="experience-details-14">
+                            <span class="btn-text">Show More</span>
+                        </button>
+
+                        <div class="experience-details" id="experience-details-14" hidden>
+                            <h3>The Story Behind the Experience</h3>
+                            <p>
+                                The west of Ireland is rich in local legends, ghost stories, and
+                                tales of unusual encounters. Follow a digital mystery trail through
+                                atmospheric towns and historic sites, discovering a new story at each stop.
+                            </p>
+
+                            <h3>What's Included?</h3>
+                            <ul>
+                                <li>Self-drive itinerary through Galway and selected destinations in Mayo</li>
+                                <li>Digital mystery trail</li>
+                                <li>Ghost stories and local folklore</li>
+                                <li>Suggested scenic walks and historic stops</li>
+                            </ul>
+
+                            <div class="experience-extra-info">
+                                <p><strong>Duration:</strong> 3 days / 2 nights</p>
+                                <p><strong>Location:</strong> Galway and selected destinations in County Mayo</p>
+                                <p><strong>Suitable for:</strong> Independent travellers and adventurous couples</p>
+                                <p><strong>Requirements:</strong> Driving licence and vehicle; accommodation depends on the selected package</p>
+                                <p><strong>Availability:</strong> Year-round, itinerary adapted to weather and daylight</p>
+                                <p><strong>Price:</strong> €249–€499 per booking package</p>
+                            </div>
+
+                            <nav class="btns-nav">
+                                <div class="popup">
+                                    <button type="button" class="story-btn"
+                                        onclick="togglePopup(this)">
+                                        Read the Legend
+                                    </button>
+                                    <div class="popuptext">                                 
+                                    <p>
+                                        Imagine travelling through the green hills of Ireland, passing ancient castles and quiet lakes hidden among the trees. These magical landscapes are the perfect setting for an old Irish tale about a brave prince and a mysterious creature called the <strong>Nine-Legged Steed</strong>!<br><br>
+
+                                        Long ago, a young prince was hunting near a beautiful lake when he saw three swans swimming towards the shore. To his surprise, the swans turned into three young women! The prince fell in love with one of them, but a jealous spell soon separated them.<br><br>
+
+                                        Heartbroken, the prince left his home to search for his beloved. During his journey, he discovered a strange little house and met the incredible Nine-Legged Steed, a magical creature that promised to help him. Together, they raced across hills, valleys, and mysterious lands, facing dangers and discovering powerful magic along the way.<br><br>
+
+                                        The prince travelled to a distant island, where he used a magical ring to defeat dangerous creatures. With the help of a magic apple and his extraordinary steed, he continued his adventure until he finally found the woman he loved.<br><br>
+
+                                        But the biggest surprise was yet to come! The Nine-Legged Steed was actually a young woman trapped under a spell. When the prince's adventure came to an end, the enchantment was broken, and she became human again.<br><br>
+
+                                        Today, Ireland's peaceful lakes, winding country roads, and ancient ruins can make you feel as though you have stepped into a world of legends. As you explore the Irish countryside, imagine the adventures that might have taken place in these mysterious landscapes. Who knows what secrets the hills and lakes might still hold?
+                                    </p>
+
+                                        <a href="https://en.wikisource.org/wiki/West_Irish_folk-tales_and_romances/18" target="_blank">Reference</a>
+                                    </div>
+                                </div>
+                            </nav>
+                            <a href="contact.html?experience=the-haunted-west-road-trip" class="book-experience-btn">Get a Quote</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Card 15: Celtic Legends Weekend -->
+                <article class="experiences-main-card"
+                    data-location="galway"
+                    data-types="heritage group-break culture"
+                    data-min-price="199"
+                    data-max-price="349">
+
+                    <div class="experiences-main-image-container">
+                        <img src="../images/Experiences/CelticLegendsWeekend1.webp" alt="street view in Galway">
+                        <span class="experience-tag">Culture</span>
+                    </div>
+
+                    <div class="experience-content">
+                        <p class="experience-location">
+                            <i class="bi bi-geo-alt-fill"></i> Galway City and County Galway
+                        </p>
+                        <h2>Celtic Legends Weekend</h2>
+                        <p class="experience-intro">
+                            Experience Irish culture through legendary stories, traditional
+                            music, colourful streets, and a memorable weekend in Galway.
+                        </p>
+                        <div class="experience-meta">
+                            <span><i class="bi bi-clock"></i> 3 days / 2 nights</span>
+                            <span>From €199</span>
+                        </div>
+
+                        <button class="expand-card-btn" type="button" aria-expanded="false" aria-controls="experience-details-15">
+                            <span class="btn-text">Show More</span>
+                        </button>
+
+                        <div class="experience-details" id="experience-details-15" hidden>
+                            <h3>The Story Behind the Experience</h3>
+                            <p>
+                                Irish folklore has been passed down through generations through
+                                stories, music and shared traditions. Explore Galway's lively
+                                streets, learn about the origins of Irish legends and experience
+                                the cultural atmosphere that keeps these traditions alive.
+                            </p>
+
+                            <h3>What's Included?</h3>
+                            <ul>
+                                <li>Exploration of Galway city</li>
+                                <li>Introduction to Irish folklore and traditions</li>
+                                <li>Storytelling session</li>
+                                <li>Evening of traditional music in a local setting</li>
+                                <li>Group cultural activities</li>
+                            </ul>
+
+                            <div class="experience-extra-info">
+                                <p><strong>Duration:</strong> 3 days / 2 nights</p>
+                                <p><strong>Location:</strong> Galway city and surrounding County Galway</p>
+                                <p><strong>Suitable for:</strong> Friends, solo travellers and small groups</p>
+                                <p><strong>Requirements:</strong> Advance booking; minimum group size may apply</p>
+                                <p><strong>Availability:</strong> Year-round, selected weekends</p>
+                                <p><strong>Price:</strong> €199–€349 per person</p>
+                            </div>
+
+                            <nav class="btns-nav">
+                                <div class="popup">
+                                    <button type="button" class="story-btn"
+                                        onclick="togglePopup(this)">
+                                        Read the Legend
+                                    </button>
+                                    <div class="popuptext">                                
+                                    <p>
+                                        Long ago, before televisions, phones, and the internet, people in Ireland loved gathering around a warm fire to share stories. Families, friends, and neighbours listened to tales about brave heroes, magical fairies, mysterious creatures, and faraway lands.<br><br>
+
+                                        Some storytellers were known as <strong>seanchaithe</strong> (pronounced “shan-a-kee”). They were keepers of stories who remembered old legends, family histories, and local traditions. They travelled from place to place, sharing their stories with everyone they met.<br><br>
+
+                                        These stories were passed from grandparents to parents, and from parents to children. Every storyteller could add their own special touch, so a story might change a little each time it was told!<br><br>
+
+                                        Even today, Irish storytellers keep this wonderful tradition alive. They share old tales in schools, festivals, pubs, and gatherings, helping new generations discover the magic of Ireland's past.<br><br>
+
+                                        As you explore Ireland, look at its ancient castles, green hills, quiet lakes, and winding roads. Every place has a history, and every family has stories worth sharing.<br><br>
+
+                                        So, here is a little challenge for you: when your Irish adventure comes to an end, why not share your favourite legend with someone else? You could become a storyteller too, keeping the magic of Ireland alive for years to come!
+                                    </p>
+                                        <a href="https://folklife.si.edu/magazine/ireland-storytelling" target="_blank">Reference</a>
+                                    </div>
+                                </div>
+                            </nav>
+                            <a href="contact.html?experience=celtic-legends-weekend" class="book-experience-btn">Get a Quote</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!--Footer Section-->
+        <section class="footer-section">
+            <div class="footer-container">
+                <img src="../images/Emeraldlogoletters.webp"    alt="Emerald Escapes logo only letters" class="logo-footer">
+                <nav class="footer-nav">
+                    <a href="../index.html">Home |</a>
+                    <a href="experiences.html">Experiences |</a>
+                    <a href="contact.html">Contact |</a>
+                </nav>
+            </div>
+            <div class="footer-credits">
+                <span>&copy2026 Gabriela Prado |</span>
+                <a href="../Project_references.pdf" target="_blank">References</a>
+            </div>
+        </section>
+
+
+    </div> <!--Main container END--> 
+    <script src="../js/script.js"></script>
+</body>
+</html>

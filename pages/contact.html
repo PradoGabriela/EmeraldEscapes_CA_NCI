@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta name="color-scheme" content="light">
+    <title>Experiences | Emerald Escapes</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-container ">
+
+        <!--Header Section-->
+        <header>    
+            <!--Mobile Header-->
+            <div id="header-mobile">
+                <div class="logo-container-mobile">
+                    <img src="../images/EmeraldLogo_Horizontal.webp" alt="emerald escapes logo" class="logo-nav">
+                </div>
+                 <button id="nav-btn-mobile" type="button" aria-label="Open nav" aria-controls="side-nav" aria-expanded="false">
+                    <i class="bi bi-three-dots"  aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <!--Desktop nav-->
+            <div id="nav-container">
+                 <div class="logo-container">
+                    <img src="../images/EmeraldLogo_Horizontal.webp" alt="emerald escapes logo" class="logo-nav">
+                </div>
+                <div class="nav-bar">
+                    <ul>
+                        <li class="nav-list"><a href="../index.html">Home</a></li>
+                        <li class="nav-list"><a href="experiences.html">Experiences</a></li>
+                        <li class="nav-list"><a href="contact.html">Contact</a></li>
+                    </ul>
+
+                </div>
+                <div class="toggle-container">
+                    <i class="bi bi-moon dark"></i>
+                    <i class="bi bi-sun light"></i>
+                    <label class="switch">
+                    <input type="checkbox" class="theme-switch">
+                    <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+        </header>
+
+
+        <!--Side Menu Section-->
+        <nav id="side-nav" aria-label="nav mobile">
+
+            <ul>
+                <li class="mobile-nav-list"><a href="../index.html">Home</a></li>
+                <li class="mobile-nav-list"><a href="experiences.html">Experiences</a></li>
+                <li class="mobile-nav-list"><a href="contact.html">Contact</a></li>                   
+            </ul>
+                <div class="toggle-container">
+                <i class="bi bi-moon dark"></i>
+                <i class="bi bi-sun light"></i>
+                <label class="switch">
+                <input type="checkbox" class="theme-switch">
+                <span class="slider round"></span>
+                </label>
+            </div>
+        </nav>
+        
+       
+        <!--Main Section-->
+
+      
+        <!--Form Section-->
+        <section class="form-section">
+            <div class="img-form">
+                <div class="contact-img">
+                        <h1>Contact Us</h1>
+                </div>
+                
+                <div class="form-container">
+
+                    <form action="contact.html" method="get" id="contact-form">
+
+                        <h2>Plan Your next Adventure</h2>
+                        <p>
+                            Tell us a little about your trip and get an estimated price.
+                        </p>
+
+                    
+                        <label for="form-name">Name</label>
+                        <input type="text" id="form-name" name="name" required autocomplete="name" minlength="3">
+                        <span id="name-error" class="error-msg hidden">Please enter a valid name</span>
+
+                        <label for="form-email">Email</label>
+                        <input type="email" id="form-email" name="email" required autocomplete="email">
+                        <span id="email-error" class="error-msg hidden">Please enter a valid email</span>
+                      
+                        <label for="form-number">Phone Number</label>
+                        <input type="tel" id="form-number" name="phone" required autocomplete="tel" minlength="10">
+                        <span id="number-error" class="error-msg hidden">Please enter a valid number</span>
+
+                        <!-- Experience list -->
+                        <label for="form-experience">Choose Your Experience</label>
+                        <select id="form-experience" name="experience" required >
+                            <option value="" selected>Choose an Experience</option>
+                            <option value="not-decided">Not decided yet</option>
+                            <option value="the-giants-causeway-quest">The Giant's Causeway Quest — From €89</option>
+                            <option value="the-enchanted-fairy-trail">The Enchanted Fairy Trail — From €45</option>
+                            <option value="dublins-dark-legends">Dublin's Dark Legends — From €25</option>
+                            <option value="the-lovers-legend-escape">The Lovers' Legend Escape — From €399</option>
+                            <option value="the-children-of-lir-adventure">The Children of Lir Adventure — From €59</option>
+                            <option value="queen-maeves-warrior-trail">Queen Maeve's Warrior Trail — From €79</option>
+                            <option value="the-banshees-midnight-mystery">The Banshee's Midnight Mystery — From €29</option>
+                            <option value="secrets-of-the-ancient-celts">Secrets of the Ancient Celts — From €99</option>
+                            <option value="selkie-secrets-of-the-wild-atlantic">Selkie Secrets of the Wild Atlantic — From €89</option>
+                            <option value="the-leprechauns-lost-treasure">The Leprechaun's Lost Treasure — From €35</option>
+                            <option value="a-night-of-castle-legends">A Night of Castle Legends — From €299</option>
+                            <option value="journey-to-tir-na-nog">Journey to Tír na nÓg — From €499</option>
+                            <option value="the-pirate-queens-coastal-adventure">The Pirate Queen's Coastal Adventure — From €129</option>
+                            <option value="the-haunted-west-road-trip">The Haunted West Road Trip — From €249</option>
+                            <option value="celtic-legends-weekend">Celtic Legends Weekend — From €199</option>
+                        </select>
+                        <span id="experience-error" class="error-msg hidden">Please select an option</span>
+
+                        <fieldset class="persons-fields hidden">
+                            <legend>Who's Coming Along?</legend>
+
+                            <div class="persons-input">
+                                <label for="adults">Adults</label>
+                                <input type="number" id="adults" name="adults" min="0" max="100" value="1" required>
+                            </div>
+                            <div class="persons-input">
+                                <label for="children">Children</label>
+                                <input type="number" id="children" name="children" min="0" max="100" value="0" required>
+                            </div>
+                            <div class="persons-input">
+                                <label for="students">Students</label>
+                                <input type="number" id="students" name="students" min="0" max="100" value="0" required>
+                            </div>
+                        </fieldset>
+
+
+                        <div class="price-preview hidden" >
+                            <h3>Your Estimated Price</h3>
+
+                            <p class="price-line"> Adults:
+                                <span id="adult-price">€0.00</span>
+                            </p>
+
+                            <p class="price-line">Children (Discount 30%):
+                                <span id="children-price">€0.00</span>
+                            </p>
+
+                            <p class="price-line">Students (Discount 10%):
+                                <span id="student-price">€0.00</span>
+                            </p>
+
+                            <hr>
+                            <p class="price-total">
+                                Estimated total:
+                                <strong id="total-price">€0.00</strong>
+                            </p>
+
+                            <p class="price-disclaimer">
+                                This is a preliminary estimate only.
+                            </p>
+                        </div>
+
+                     
+                        <label for="form-message">Tell Us About Your Trip</label>
+                        <textarea id="form-message" name="message"  required rows="5" minlength="50" maxlength="1000" placeholder="Tell us about your plans, preferred dates, or any special requests..."></textarea>
+                        <span id="message-error" class="error-msg hidden">Please enter a valid message</span>
+                        
+                        <button type="submit" class="form-submit">
+                            Send Message
+                        </button>
+
+                    </form>
+
+                    <div id="confirmation">
+                        <h2>Thank you for contacting Emerald Escapes! Your message has been sent</h2>
+                           <a href="contact.html"><button class="more-info-btn">Back</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+               
+        <!--Footer Section-->
+        <section class="footer-section">
+            <div class="footer-container">
+                <img src="../images/Emeraldlogoletters.webp"    alt="Emerald Escapes logo only letters" class="logo-footer">
+                <nav class="footer-nav">
+                    <a href="../index.html">Home |</a>
+                    <a href="experiences.html">Experiences |</a>
+                    <a href="contact.html">Contact |</a>
+                </nav>
+            </div>
+            <div class="footer-credits">
+                <span>&copy2026 Gabriela Prado |</span>
+                <a href="../Project_references.pdf" >References</a>
+            </div>
+        </section>
+
+
+    </div> <!--Main container END--> 
+    <script src="../js/script.js"></script>
+</body>
+</html>
