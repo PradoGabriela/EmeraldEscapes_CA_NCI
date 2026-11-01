@@ -1173,7 +1173,13 @@ button{
 
         #confirmation{
             display: none;
-            min-height: 600px;
+            min-height: 800px;
+            
+        }
+
+
+        #confirmation h2{
+            margin-top: 80px;
         }
     /*contact form end*/
     
